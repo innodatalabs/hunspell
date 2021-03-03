@@ -12,6 +12,7 @@ set(LIBHUNSPELL_SOURCES affentry.cxx affentry.hxx affixmgr.cxx affixmgr.hxx
 
 add_library(hunspell STATIC ${LIBHUNSPELL_SOURCES})
 add_definitions("-DBUILDING_LIBHUNSPELL")
+add_definitions("-DHUNSPELL_STATIC")
 target_include_directories (hunspell PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 install(TARGETS hunspell DESTINATION lib)
 install(FILES hunspell.h DESTINATION include)
