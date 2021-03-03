@@ -95,3 +95,4 @@ hunspell-*.tar.gz
 
 #MSVC
 /msvc/Hunspell.VC.VC.opendb
+redbuild/
